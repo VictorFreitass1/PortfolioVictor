@@ -32,7 +32,7 @@ li{
 /* Navbar Section Styling */
 .nav_section{
     width: 100%;
-    height: 75px;
+    height: auto;
     background: #011117;
     border-bottom: 2px solid #02141b;
     box-shadow: 0 0.5px 20px #01141b;
@@ -49,6 +49,7 @@ li{
 .logo_section{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 .logo_link{
     font-size: 1.7rem;
@@ -506,6 +507,34 @@ li{
   .section__title, 
   .section__subtitle {
     text-align: center;
+    margin-bottom: 2.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.14rem;
+    background: linear-gradient(180deg,  #0d18b6, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: linear-gradient(0.25turn rgba(255, 0, 128), #00dbde);
+    border-image-slice: 1;
+    width: 100%;
   }
+  .about__img {
+    width: 35%;
+    border-radius: 3.0rem;
+    margin-top: -40px;
+    justify-self: center;
+    align-self: center;
+}
+.about__description{
+    font-size: 1.1rem;
+    color: #999999;
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+.about__info{
+    font-size: 1.1rem;
+    color: #999999;
+    margin-bottom: 2.2rem;
+}
 
 /* End */
