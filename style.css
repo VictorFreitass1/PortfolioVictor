@@ -1,4 +1,3 @@
-/*  */
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ li{
     display: none;
 }
 
-/* Main Section Styling */
 .main_section{
     width: 100%;
     height: 100vh;
@@ -29,7 +27,6 @@ li{
     position: relative;
 }
 
-/* Navbar Section Styling */
 .nav_section{
     width: 100%;
     height: auto;
@@ -45,7 +42,6 @@ li{
     justify-content: space-between;
 }
 
-/* Logo Section Styling */
 .logo_section{
     display: flex;
     align-items: center;
@@ -68,7 +64,6 @@ li{
     color: #999999;
 }
 
-/* Nav Items Section Styling */
 .nav_items_icon{
     display: flex;
     align-items: center;
@@ -98,14 +93,12 @@ li{
     width: 100%;
 }
 
-/* Toggle Icon Button */
 .toggleIcon{
     font-size: 1.3rem;
     color: #bcbcbc;
     display: none;
 }
 
-/* Hero Section Styling */
 .hero_section{
     width: 100%;
     height: calc(85vh - 75px);
@@ -115,7 +108,6 @@ li{
     padding-top: 5.0rem !important;
 }
 
-/* Personal Data Section Styling */
 .personal_data_section{
     width: 57%;
     height: auto;
@@ -146,7 +138,6 @@ li{
     animation: wave 4s ease-out infinite !important;
 }
 
-/* WAving hand animation section */
 @keyframes wave {
     0%{
         transform: rotate(0deg);
@@ -189,7 +180,6 @@ li{
     margin-bottom: 2.2rem;
 }
 
-/* Animation on personal data section */
 .slideToUp1{
     animation: slideToUp 1s ease-in;
 }
@@ -212,7 +202,6 @@ li{
     }
 }
 
-/* Social Links Section Styling */
 .social_icons{
     display: flex;
     align-items: center;
@@ -248,7 +237,6 @@ li{
     color: #bcbcbc;
 }
 
-/* Social Link Animation */
 .slideToLeftFacebook{
     animation: slideToLeft 1.5s ease-out;
 }
@@ -289,27 +277,26 @@ li{
     color: #012434;
 }
 
-
-/* Image Section Styling */
-.img_section{
-    width: 450px;
-    height: auto;
+.img-container {
+    width: 380px; /* Defina a largura desejada */
+    height: 380px; /* Defina a altura desejada (a mesma que a largura para uma imagem perfeitamente redonda) */
+    border-radius: 50%; /* Define um raio de borda de 50%, tornando a div redonda */
+    overflow: hidden;
     background: linear-gradient(85deg, #02356b, #ffffff);
-    border-radius: 50%;
     box-shadow: -3px -3px 150px #0d18b6;
-    
-}
-.my_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.my-img {
+    width: 100%; /* Garante que a imagem ocupa todo o espaço da div pai */
+    height: 100%; /* Garante que a imagem ocupa todo o espaço da div pai */
+    object-fit: cover; /* Mantém a proporção da imagem e corta conforme necessário */
+    border-radius: 50%; /* Define um raio de borda de 50%, tornando a imagem redonda */
+}
 
 
-/* Red Dim Background color section styling */
 .red_circle{
     position: absolute;
     width: 1px;
@@ -324,10 +311,6 @@ li{
     z-index: 9999;
 }
 
-
-/* Let's MAke an Responsive to all devices */
-
-/* Max width 1048px only */
 @media (max-width: 1048px) {
     .nav_items .link{
         font-size: 1.19rem;
@@ -346,7 +329,6 @@ li{
     }
 }
 
-/* Max width 915px only */
 @media (max-width: 1048px) {
     .nav_items_section .nav_items{
         position: fixed;
@@ -381,7 +363,6 @@ li{
         left: 0;
     }
 
-    /*  */
     .hero_section{
         width: 100%;
         height: 100vh;
@@ -400,7 +381,6 @@ li{
     }
 }
 
-/* Max width 770 only */
 @media (max-width: 770px) {
     .main_section{
         width: 100%;
@@ -431,8 +411,6 @@ li{
     }
 }
 
-
-/* Max width 380 only */
 @media (max-width: 380px) {
     .main_section{
         width: 100%;
@@ -536,5 +514,3 @@ li{
     color: #999999;
     margin-bottom: 2.2rem;
 }
-
-/* End */
